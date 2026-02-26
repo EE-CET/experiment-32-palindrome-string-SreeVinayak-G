@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1 (Case Insensitive)",
+      "setup": "javac src/Palindrome.java",
+      "run": "java -cp src Palindrome",
+      "input": "Malayalam",
+      "output": "1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Not a Palindrome",
+      "setup": "javac src/Palindrome.java",
+      "run": "java -cp src Palindrome",
+      "input": "Hello",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Numeric Palindrome",
+      "setup": "javac src/Palindrome.java",
+      "run": "java -cp src Palindrome",
+      "input": "12321",
+      "output": "1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Mixed Case Palindrome",
+      "setup": "javac src/Palindrome.java",
+      "run": "java -cp src Palindrome",
+      "input": "AbBa",
+      "output": "1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
